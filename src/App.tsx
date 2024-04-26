@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { RouterProvider } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import { useEffect } from 'react'
+import { useAppDispatch } from './hooks/redux'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { router } from './router'
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
+import { IconoirProvider } from 'iconoir-react'
+import { fetchQuizzes } from './features/quizzes/quizzesSlice'
+
+export function App() {
+  const dispatch = useAppDispatch()
+  
+  useEffect(() => {
+    dispatch(fetchQuizzes())
+  }, [dispatch])
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeProvider theme={defaultTheme}>
+      <IconoirProvider iconProps={{ strokeWidth: 3 }}>
+        <RouterProvider router={router} />
+        <GlobalStyle />
+      </IconoirProvider>
+    </ThemeProvider>
   )
 }
-
-export default App
