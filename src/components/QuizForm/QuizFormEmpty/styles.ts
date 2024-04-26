@@ -5,10 +5,10 @@ export const Empty = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   gap: 1rem;
   height: 100%;
-  
+
   color: ${({ theme }) => theme['gray-2']};
 `
 

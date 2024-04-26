@@ -6,7 +6,7 @@ describe('Card', () => {
     const wrapper = render(
       <Card.Root>
         <Card.Text>Card text</Card.Text>
-      </Card.Root>
+      </Card.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
@@ -16,7 +16,7 @@ describe('Card', () => {
     const wrapper = render(
       <Card.Root>
         <Card.Image src="https://via.placeholder.com/250x128" alt="image" />
-      </Card.Root>
+      </Card.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
@@ -26,7 +26,7 @@ describe('Card', () => {
     const wrapper = render(
       <Card.Root correct>
         <Card.Text>Card text</Card.Text>
-      </Card.Root>
+      </Card.Root>,
     )
 
     const label = wrapper.getByTestId('card-label')
@@ -46,7 +46,7 @@ describe('Card', () => {
     const wrapper = render(
       <Card.Root incorrect>
         <Card.Text>Card text</Card.Text>
-      </Card.Root>
+      </Card.Root>,
     )
 
     const label = wrapper.getByTestId('card-label')

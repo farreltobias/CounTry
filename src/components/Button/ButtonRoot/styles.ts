@@ -43,7 +43,7 @@ const ButtonContainer = styled.button<ButtonContainerProps>`
 
 export const PrimaryButton = styled(ButtonContainer)`
   background: ${({ theme }) => theme['green-dark']};
-  color: ${({ theme }) => theme['white']};
+  color: ${({ theme }) => theme.white};
 
   &:hover {
     background: ${({ theme }) => theme['green-light']};
@@ -62,7 +62,7 @@ export const SecondaryButton = styled(ButtonContainer)`
 
 export const DangerButton = styled(ButtonContainer)`
   background: ${({ theme }) => theme['red-light']};
-  color: ${({ theme }) => theme['white']};
+  color: ${({ theme }) => theme.white};
 
   &:hover {
     background: ${({ theme }) => theme['red-dark']};

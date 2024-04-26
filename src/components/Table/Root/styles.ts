@@ -16,7 +16,7 @@ export const TableSection = styled.section<TableSectionProps>`
   border-style: solid;
 
   border-color: ${({ theme, $active }) =>
-   $active ? theme['green-light'] : theme['gray-3']};
+    $active ? theme['green-light'] : theme['gray-3']};
 
   background-color: ${({ theme, $bg }) =>
     $bg !== 'transparent' ? theme[$bg] : 'transparent'};

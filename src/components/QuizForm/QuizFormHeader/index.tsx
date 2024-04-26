@@ -21,7 +21,7 @@ export const QuizFormHeader: React.FC = () => {
         updateQuiz({
           title: event.target.value,
           errors: { ...errors },
-        })
+        }),
       )
     }
 

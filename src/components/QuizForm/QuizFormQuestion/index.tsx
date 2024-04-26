@@ -30,7 +30,7 @@ export const QuizFormQuestion: React.FC<Props> = ({ question, number }) => {
 
   function onDeleteClick() {
     const newQuestions = quizInForm.questions.filter(
-      (q) => q.id !== question.id
+      (q) => q.id !== question.id,
     )
 
     dispatch(updateQuiz({ questions: newQuestions }))
@@ -85,7 +85,7 @@ export const QuizFormQuestion: React.FC<Props> = ({ question, number }) => {
                   )}
                 </Card.Root>
               </QuestionItem>
-            ))
+            )),
           )}
         </Table.Body>
       </Table.Root>

@@ -6,7 +6,7 @@ export const fetchQuizzes = createAsyncThunk(
   'quizzes/fetchQuizzes',
   async () => {
     return getQuizzes()
-  }
+  },
 )
 
 const quizzesSlice = createSlice({
@@ -19,7 +19,7 @@ const quizzesSlice = createSlice({
   reducers: {
     removeQuiz(state, action) {
       const entries = state.entities.filter(
-        (quiz) => quiz.slug !== action.payload
+        (quiz) => quiz.slug !== action.payload,
       )
 
       return { ...state, entities: entries }

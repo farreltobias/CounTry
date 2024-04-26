@@ -21,8 +21,8 @@ export const CardRoot: React.FC<Props> = ({
   const isAnswered = correct || incorrect || rest.disabled
 
   const classnames = {
-    correct: correct,
-    incorrect: incorrect,
+    correct,
+    incorrect,
     'correct-as-checked': correctAsChecked,
   }
 

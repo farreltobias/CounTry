@@ -61,7 +61,7 @@ export const getCapitals = async (filter = ''): Promise<Capital[]> => {
   }
 
   return capitalsCache.filter((capital) =>
-    capital.label.toLowerCase().includes(filter.toLowerCase())
+    capital.label.toLowerCase().includes(filter.toLowerCase()),
   )
 }
 
@@ -78,11 +78,11 @@ const fetchLanguages = async () => {
       Object.entries(country.languages).map(([key, value]) => ({
         value: key,
         label: value,
-      }))
+      })),
     )
     .filter(
       (language, index, self) =>
-        index === self.findIndex((t) => t.value === language.value)
+        index === self.findIndex((t) => t.value === language.value),
     )
 
   cache.push(...languages)
@@ -94,6 +94,6 @@ export const getLanguages = async (filter = ''): Promise<Language[]> => {
   }
 
   return cache.filter((language) =>
-    language.label.toLowerCase().includes(filter.toLowerCase())
+    language.label.toLowerCase().includes(filter.toLowerCase()),
   )
 }

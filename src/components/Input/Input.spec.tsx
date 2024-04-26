@@ -8,7 +8,7 @@ describe('Input', () => {
       <Input.Root>
         <Input.Label>Input text</Input.Label>
         <Input.Icon icon={<TestTube />} />
-      </Input.Root>
+      </Input.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
@@ -18,7 +18,7 @@ describe('Input', () => {
     const wrapper = render(
       <Input.Root>
         <Input.Label>Input text</Input.Label>
-      </Input.Root>
+      </Input.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
@@ -27,15 +27,13 @@ describe('Input', () => {
     const wrapper = render(
       <Input.Root>
         <Input.Icon icon={<TestTube />} />
-      </Input.Root>
+      </Input.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
   })
   it('should render the component', async () => {
-    const wrapper = render(
-      <Input.Root />
-    )
+    const wrapper = render(<Input.Root />)
 
     expect(wrapper.container).toBeInTheDocument()
   })

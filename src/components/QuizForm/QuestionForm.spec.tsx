@@ -50,7 +50,7 @@ describe('Quiz Form', () => {
             </MemoryRouter>
           </Provider>
         ),
-      }
+      },
     )
 
     const list = wrapper.getByTestId('quiz-list')

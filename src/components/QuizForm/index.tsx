@@ -1,8 +1,8 @@
-import { QuizFormEmpty } from "./QuizFormEmpty";
-import { QuizFormHeader } from "./QuizFormHeader";
-import { QuizFormList } from "./QuizFormList";
-import { QuizFormQuestion } from "./QuizFormQuestion";
-import { QuizFormRoot } from "./QuizFormRoot";
+import { QuizFormEmpty } from './QuizFormEmpty'
+import { QuizFormHeader } from './QuizFormHeader'
+import { QuizFormList } from './QuizFormList'
+import { QuizFormQuestion } from './QuizFormQuestion'
+import { QuizFormRoot } from './QuizFormRoot'
 
 export const QuizForm = {
   Root: QuizFormRoot,

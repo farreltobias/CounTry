@@ -1,4 +1,4 @@
-import { IconContainer } from "./styles"
+import { IconContainer } from './styles'
 
 type Props = {
   icon: React.ReactNode

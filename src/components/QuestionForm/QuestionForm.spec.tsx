@@ -19,7 +19,7 @@ describe('Question Form', () => {
         wrapper: ({ children }) => (
           <Provider store={store}>{children}</Provider>
         ),
-      }
+      },
     )
 
     expect(wrapper.container).toBeInTheDocument()

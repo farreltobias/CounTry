@@ -11,7 +11,7 @@ describe('Button', () => {
     const wrapper = render(
       <Button.Root>
         <Button.Icon icon={<TestTube />} /> Button text
-      </Button.Root>
+      </Button.Root>,
     )
 
     expect(wrapper.container).toBeInTheDocument()
@@ -26,7 +26,7 @@ describe('Button', () => {
         wrapper: ({ children }) => (
           <MemoryRouter initialEntries={['/']}>{children}</MemoryRouter>
         ),
-      }
+      },
     )
 
     const link = wrapper.getByRole('link')
@@ -40,7 +40,7 @@ describe('Button', () => {
     const wrapper = render(
       <Button.Root onClick={mockButtonClicked}>
         <Button.Icon icon={<TestTube />} /> Button text
-      </Button.Root>
+      </Button.Root>,
     )
 
     const button = wrapper.getByRole('button')

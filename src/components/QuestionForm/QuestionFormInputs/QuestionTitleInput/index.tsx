@@ -16,7 +16,7 @@ export const QuestionTitleInput: React.FC = () => {
         updateQuestion({
           title: event.target.value,
           errors: { ...errors },
-        })
+        }),
       )
     }
 

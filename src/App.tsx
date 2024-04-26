@@ -11,7 +11,7 @@ import { fetchQuizzes } from './features/quizzes/quizzesSlice'
 
 export function App() {
   const dispatch = useAppDispatch()
-  
+
   useEffect(() => {
     dispatch(fetchQuizzes())
   }, [dispatch])

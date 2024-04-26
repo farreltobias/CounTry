@@ -60,7 +60,7 @@ export const AlternativeList = styled.ul`
   flex-wrap: wrap;
   max-width: 34.125rem;
   height: 18.875rem;
-  
+
   gap: 2.875rem;
 
   @media screen and (max-width: 768px) {
@@ -69,7 +69,6 @@ export const AlternativeList = styled.ul`
     height: auto;
     gap: 1.5rem;
   }
-
 `
 
 export const AlternativeItem = styled.li`

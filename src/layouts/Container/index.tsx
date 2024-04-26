@@ -12,7 +12,7 @@ export function ContainerLayout() {
   const { slug } = useParams()
 
   const quiz = useAppSelector((state) =>
-    state.quizzes.entities.find((q) => q.slug === slug)
+    state.quizzes.entities.find((q) => q.slug === slug),
   )
 
   return (

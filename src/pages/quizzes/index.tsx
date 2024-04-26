@@ -28,7 +28,7 @@ export function Quizzes() {
         .replace(/[\u0300-\u036f]/g, '')
 
     const filteredQuizzes = initialQuizzes.filter(({ title }) =>
-      formatText(title).includes(formatText(input))
+      formatText(title).includes(formatText(input)),
     )
 
     setQuizzes(filteredQuizzes)

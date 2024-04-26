@@ -43,13 +43,13 @@ export const QuestionFormRoot: React.FC<Props> = ({ children }) => {
       return
     }
 
-    let newQuestions = [...quizInForm.questions]
+    const newQuestions = [...quizInForm.questions]
 
     if (!isEditing) {
       newQuestions.push(questionFormatted)
     } else {
       const questionIndex = quizInForm.questions.findIndex(
-        (quizQuestion) => quizQuestion.id === questionFormatted.id
+        (quizQuestion) => quizQuestion.id === questionFormatted.id,
       )
 
       newQuestions[questionIndex] = questionFormatted
@@ -64,7 +64,7 @@ export const QuestionFormRoot: React.FC<Props> = ({ children }) => {
         updateQuiz({
           errors: { ...errors },
           questions: newQuestions,
-        })
+        }),
       )
     }
 

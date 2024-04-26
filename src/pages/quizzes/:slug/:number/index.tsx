@@ -72,7 +72,7 @@ export function Question() {
     if (typeof answer !== 'string') return
 
     const alternative = question?.alternatives.find(
-      (alternative) => alternative.value === answer
+      (alternative) => alternative.value === answer,
     )
 
     const isCorrect = !!alternative?.correct

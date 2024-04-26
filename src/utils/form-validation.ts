@@ -37,7 +37,7 @@ export class QuestionValidation {
           value: z.string().min(1, 'An Alternative is required'),
           image: z.string().optional(),
           correct: z.boolean(),
-        })
+        }),
       )
       .min(2, 'At least two alternatives are required')
       .max(4, 'At most four alternatives are allowed'),

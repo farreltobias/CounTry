@@ -1,10 +1,9 @@
 import { useDispatch } from 'react-redux'
 import { WhiteFlag } from 'iconoir-react'
 
-import { Select } from 'src/components/Select'
+import { Select, Option } from 'src/components/Select'
 import { Card } from 'src/components/Card'
 
-import { Option } from 'src/components/Select'
 import { useFormSelector } from 'src/hooks/redux'
 import { updateQuestion } from 'src/features/form/questionSlice'
 import { Alternative } from 'src/@types/types'
@@ -71,7 +70,7 @@ export const QuestionAlternativesSelect: React.FC<Props> = () => {
   }
 
   const handleAlternativeChange = (
-    values: (Option & { correct?: boolean })[]
+    values: (Option & { correct?: boolean })[],
   ) => {
     const alternatives: Alternative[] = values.map((value) => ({
       label: value.label,
@@ -92,7 +91,7 @@ export const QuestionAlternativesSelect: React.FC<Props> = () => {
         updateQuestion({
           alternatives: alternativesWithCorrect,
           errors: { ...errors },
-        })
+        }),
       )
     }
 

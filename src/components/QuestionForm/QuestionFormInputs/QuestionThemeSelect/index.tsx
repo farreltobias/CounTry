@@ -26,7 +26,7 @@ export const QuestionThemeSelect: React.FC = () => {
           theme,
           alternatives: [],
           errors: { ...errors },
-        })
+        }),
       )
     }
 

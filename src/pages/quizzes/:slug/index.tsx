@@ -36,7 +36,7 @@ export function Quiz() {
       addQuizStatus({
         slug: quiz.slug,
         totalQuestions: quiz.questions.length,
-      })
+      }),
     )
   }, [])
 

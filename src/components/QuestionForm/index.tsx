@@ -5,5 +5,5 @@ import { Inputs } from './QuestionFormInputs'
 export const QuestionForm = {
   Root: QuestionFormRoot,
   Header: QuestionFormHeader,
-  Inputs: Inputs,
+  Inputs,
 }

@@ -2,10 +2,10 @@ import React, { Children } from 'react'
 
 export const separateChildren = (
   children: React.ReactNode,
-  childName: string
+  childName: string,
 ) => {
   return Children.map(children, (child) => {
-    // @ts-ignore
+    // @ts-expect-error
     if (!child || child?.type?.name !== childName) {
       return null
     }

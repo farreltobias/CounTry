@@ -33,7 +33,7 @@ export function FormLayout() {
       newQuizzes.push(quizFormatted)
     } else {
       const quizIndex = newQuizzes.findIndex(
-        (quiz) => quiz.slug === quizFormatted.slug
+        (quiz) => quiz.slug === quizFormatted.slug,
       )
 
       newQuizzes[quizIndex] = quizFormatted
