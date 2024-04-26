@@ -1,5 +1,6 @@
-import { Empty, Error } from './styles'
 import { useFormSelector } from 'src/hooks/redux'
+
+import { Empty, Error } from './styles'
 
 export const QuizFormEmpty: React.FC = () => {
   const quizInForm = useFormSelector((state) => state.quizInForm)

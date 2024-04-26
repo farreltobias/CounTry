@@ -1,4 +1,4 @@
-import { OptionProps, components } from 'react-select'
+import { components, OptionProps } from 'react-select'
 
 import { Option } from '../SelectRoot'
 

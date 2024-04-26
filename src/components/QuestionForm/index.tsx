@@ -1,6 +1,6 @@
 import { QuestionFormHeader } from './QuestionFormHeader'
-import { QuestionFormRoot } from './QuestionFormRoot'
 import { Inputs } from './QuestionFormInputs'
+import { QuestionFormRoot } from './QuestionFormRoot'
 
 export const QuestionForm = {
   Root: QuestionFormRoot,

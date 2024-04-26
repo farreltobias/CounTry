@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
-
-import { Logo } from 'src/components/Logo'
 import { Button } from 'src/components/Button'
+import { Logo } from 'src/components/Logo'
+import { addQuizStatus, removeQuizStatus } from 'src/features/quiz/quizStatus'
+import { useAppDispatch } from 'src/hooks/redux'
+import { QuizLayoutProps } from 'src/layouts/Container'
 
 import {
   ButtonContainer,
@@ -16,9 +18,6 @@ import {
   Total,
   TradeMark,
 } from './styles'
-import { QuizLayoutProps } from 'src/layouts/Container'
-import { useAppDispatch } from 'src/hooks/redux'
-import { addQuizStatus, removeQuizStatus } from 'src/features/quiz/quizStatus'
 
 export function Quiz() {
   const navigate = useNavigate()

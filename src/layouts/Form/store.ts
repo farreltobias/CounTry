@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import formQuizSlice from 'src/features/form/quizSlice'
 import formQuestionSlice from 'src/features/form/questionSlice'
+import formQuizSlice from 'src/features/form/quizSlice'
 
 export const store = configureStore({
   reducer: {

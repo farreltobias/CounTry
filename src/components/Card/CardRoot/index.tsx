@@ -1,7 +1,8 @@
-import { InputHTMLAttributes } from 'react'
-import { CardInput, CardLabel, Feedback } from './styles'
-import { v4 as uuid } from 'uuid'
 import { Check, Minus, Xmark } from 'iconoir-react'
+import { InputHTMLAttributes } from 'react'
+import { v4 as uuid } from 'uuid'
+
+import { CardInput, CardLabel, Feedback } from './styles'
 
 type Props = React.PropsWithChildren<{
   correct?: boolean

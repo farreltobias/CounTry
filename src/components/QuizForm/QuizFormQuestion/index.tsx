@@ -1,16 +1,15 @@
-import { Children } from 'react'
-import { EditPencil, Trash, Xmark } from 'iconoir-react'
 import { Reorder, useMotionValue } from 'framer-motion'
-
+import { EditPencil, Trash, Xmark } from 'iconoir-react'
+import { Children } from 'react'
 import { Question } from 'src/@types/types'
 import { Button } from 'src/components/Button'
 import { Card } from 'src/components/Card'
 import { Table } from 'src/components/Table'
-import { useRaisedShadow } from 'src/utils/use-raised-shadows'
-
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 import { removeQuestion, updateQuestion } from 'src/features/form/questionSlice'
 import { updateQuiz } from 'src/features/form/quizSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+import { useRaisedShadow } from 'src/utils/use-raised-shadows'
+
 import { Actions, QuestionItem, QuestionNumber } from './styles'
 
 type Props = React.PropsWithChildren<{

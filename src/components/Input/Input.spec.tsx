@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react'
-import { Input } from '.'
 import { TestTube } from 'iconoir-react'
+
+import { Input } from '.'
 
 describe('Input', () => {
   it('should render the component with both children', async () => {

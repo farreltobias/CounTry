@@ -1,5 +1,6 @@
 import { EditableQuiz, Quiz } from 'src/@types/types'
 import { v4 as uuid } from 'uuid'
+
 import { QuizValidation } from './form-validation'
 
 export class QuizMapper {

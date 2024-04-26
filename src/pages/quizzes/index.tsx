@@ -1,6 +1,12 @@
 import { Plus, Search } from 'iconoir-react'
-import { Logo } from '../../components/Logo'
+import { createRef, useState } from 'react'
 import { Button } from 'src/components/Button'
+import { Input } from 'src/components/Input'
+import { QuizCard } from 'src/components/QuizCard'
+import { Table } from 'src/components/Table'
+import { useAppSelector } from 'src/hooks/redux'
+
+import { Logo } from '../../components/Logo'
 import {
   Header,
   MainContainer,
@@ -8,11 +14,6 @@ import {
   Title,
   TitleContainer,
 } from './styles'
-import { Input } from 'src/components/Input'
-import { QuizCard } from 'src/components/QuizCard'
-import { Table } from 'src/components/Table'
-import { useAppSelector } from 'src/hooks/redux'
-import { createRef, useState } from 'react'
 
 export function Quizzes() {
   const inputRef = createRef<HTMLInputElement>()

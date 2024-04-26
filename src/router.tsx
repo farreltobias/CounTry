@@ -2,16 +2,15 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import { ContainerLayout } from './layouts/Container'
 import { FormLayout } from './layouts/Form'
-
-import { Home } from './pages/home'
-import { Question } from './pages/quizzes/:slug/:number'
-import { NotFound } from './pages/404'
-import { Quiz } from './pages/quizzes/:slug'
-import { Result } from './pages/quizzes/:slug/result'
-import { Quizzes } from './pages/quizzes'
-import { NewQuiz } from './pages/quizzes/new'
-import { EditQuiz } from './pages/quizzes/:slug/edit'
 import { MainLayout } from './layouts/Main'
+import { NotFound } from './pages/404'
+import { Home } from './pages/home'
+import { Quizzes } from './pages/quizzes'
+import { Quiz } from './pages/quizzes/:slug'
+import { Question } from './pages/quizzes/:slug/:number'
+import { EditQuiz } from './pages/quizzes/:slug/edit'
+import { Result } from './pages/quizzes/:slug/result'
+import { NewQuiz } from './pages/quizzes/new'
 
 export const router = createBrowserRouter([
   {

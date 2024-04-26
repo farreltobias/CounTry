@@ -1,4 +1,5 @@
-import { MultiValueGenericProps, components } from 'react-select'
+import { components, MultiValueGenericProps } from 'react-select'
+
 import { Option } from '..'
 
 export const buildMultiValueLabel = () => (props: MultiValueGenericProps) => {

@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { LogoContainer, TagContainer } from './styles'
 import { Link } from 'react-router-dom'
+
+import { LogoContainer, TagContainer } from './styles'
 
 type Props = {
   size?: 'sm' | 'md' | 'lg'

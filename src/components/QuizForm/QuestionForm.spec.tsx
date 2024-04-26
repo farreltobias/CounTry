@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react'
-import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { Provider } from 'react-redux'
-
-import { store } from 'src/store'
+import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { FormLayout } from 'src/layouts/Form'
+import { store } from 'src/store'
 
 import { QuizForm } from '.'
 

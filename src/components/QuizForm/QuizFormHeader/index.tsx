@@ -1,8 +1,9 @@
 import { Button } from 'src/components/Button'
 import { Input } from 'src/components/Input'
-import { Buttons, FormHeader, HeaderText } from './styles'
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 import { updateQuiz } from 'src/features/form/quizSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+
+import { Buttons, FormHeader, HeaderText } from './styles'
 
 export const QuizFormHeader: React.FC = () => {
   const dispatch = useFormDispatch()

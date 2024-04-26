@@ -1,8 +1,8 @@
-import { StyledSelect } from './styles'
+import { Option } from '..'
 import { buildControl } from '../buildControl'
 import { buildMultiValueLabel } from '../buildMultiValue'
-import { Option } from '..'
 import { buildOption } from '../buildOption'
+import { StyledSelect } from './styles'
 
 type Props = {
   defaultOptions?: Option[]

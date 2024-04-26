@@ -1,5 +1,4 @@
 import { Archery } from 'iconoir-react'
-
 import { Option, Select } from 'src/components/Select'
 import { updateQuestion } from 'src/features/form/questionSlice'
 import { useFormDispatch, useFormSelector } from 'src/hooks/redux'

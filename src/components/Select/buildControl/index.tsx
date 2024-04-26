@@ -1,4 +1,4 @@
-import { type ControlProps, components } from 'react-select'
+import { components, type ControlProps } from 'react-select'
 
 import { Error, IconContainer, LabelSpan, SelectContainer } from './styles'
 

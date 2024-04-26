@@ -1,5 +1,6 @@
 import { useFormSelector } from 'src/hooks/redux'
-import { FormHeader, HeaderTitle, HeaderSubtitle } from './styles'
+
+import { FormHeader, HeaderSubtitle, HeaderTitle } from './styles'
 
 export const QuestionFormHeader: React.FC = () => {
   const questionInForm = useFormSelector((state) => state.questionInForm)

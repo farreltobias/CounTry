@@ -1,15 +1,13 @@
-import { Outlet, useNavigate, useParams } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import { Outlet, useNavigate, useParams } from 'react-router-dom'
+import { Quiz } from 'src/@types/types'
+import { setQuizzes } from 'src/api/storage'
+import { Logo } from 'src/components/Logo'
+import { updateQuizzes } from 'src/features/quizzes/quizzesSlice'
+import { useAppDispatch, useAppSelector } from 'src/hooks/redux'
 
 import { store } from './store'
-
-import { Logo } from 'src/components/Logo'
-import { useAppDispatch, useAppSelector } from 'src/hooks/redux'
-import { Quiz } from 'src/@types/types'
-import { updateQuizzes } from 'src/features/quizzes/quizzesSlice'
-
 import { LayoutContainer } from './styles'
-import { setQuizzes } from 'src/api/storage'
 
 export type FormLayoutContext = {
   quiz: Quiz | undefined

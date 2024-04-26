@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom'
-
-import { Center, Container, GlobalStyle, Header, Nav } from './styles'
 import { Button } from 'src/components/Button'
 import { Logo } from 'src/components/Logo'
+
+import { Center, Container, GlobalStyle, Header, Nav } from './styles'
 
 export function MainLayout() {
   return (

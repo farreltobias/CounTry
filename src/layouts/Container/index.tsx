@@ -1,8 +1,8 @@
 import { Outlet, useParams } from 'react-router-dom'
+import { Quiz } from 'src/@types/types'
+import { useAppSelector } from 'src/hooks/redux'
 
 import { Container } from './styles'
-import { useAppSelector } from 'src/hooks/redux'
-import { Quiz } from 'src/@types/types'
 
 export type QuizLayoutProps = {
   quiz?: Quiz

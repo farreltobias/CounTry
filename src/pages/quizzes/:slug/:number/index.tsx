@@ -1,8 +1,17 @@
 import { Check, NavArrowRight } from 'iconoir-react'
+import { createRef, useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-
-import { Logo } from 'src/components/Logo'
+import { useNavigate, useOutletContext } from 'react-router-dom'
+import { Alternative } from 'src/@types/types'
 import { Card } from 'src/components/Card'
+import { Logo } from 'src/components/Logo'
+import {
+  addAnsweredQuestion,
+  addCorrectAnswer,
+} from 'src/features/quiz/quizStatus'
+import { useAppDispatch, useAppSelector } from 'src/hooks/redux'
+import { QuizLayoutProps } from 'src/layouts/Container'
+
 import {
   AlternativeItem,
   AlternativeList,
@@ -17,15 +26,6 @@ import {
   TitleContainer,
   Total,
 } from './styles'
-import { useOutletContext, useNavigate } from 'react-router-dom'
-import { QuizLayoutProps } from 'src/layouts/Container'
-import { createRef, useEffect, useState } from 'react'
-import { useAppDispatch, useAppSelector } from 'src/hooks/redux'
-import {
-  addAnsweredQuestion,
-  addCorrectAnswer,
-} from 'src/features/quiz/quizStatus'
-import { Alternative } from 'src/@types/types'
 
 export function Question() {
   const navigate = useNavigate()

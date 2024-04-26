@@ -1,21 +1,19 @@
-import { useDispatch } from 'react-redux'
 import { WhiteFlag } from 'iconoir-react'
-
-import { Select, Option } from 'src/components/Select'
-import { Card } from 'src/components/Card'
-
-import { useFormSelector } from 'src/hooks/redux'
-import { updateQuestion } from 'src/features/form/questionSlice'
+import { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import { Alternative } from 'src/@types/types'
-
-import { CardsList, AlternativesContainer } from './styles'
 import {
   getCapitals,
   getFlags,
   getLanguages,
   getNames,
 } from 'src/api/restCountries'
-import { useEffect, useState } from 'react'
+import { Card } from 'src/components/Card'
+import { Option, Select } from 'src/components/Select'
+import { updateQuestion } from 'src/features/form/questionSlice'
+import { useFormSelector } from 'src/hooks/redux'
+
+import { AlternativesContainer, CardsList } from './styles'
 
 type Props = React.PropsWithChildren<{}>
 

@@ -1,13 +1,13 @@
 import { useOutletContext } from 'react-router-dom'
-import * as z from 'zod'
-
+import { Quiz } from 'src/@types/types'
+import { updateQuiz } from 'src/features/form/quizSlice'
 import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 import { FormLayoutContext } from 'src/layouts/Form'
-import { FormSection } from './styles'
-import { QuizMapper } from 'src/utils/quiz-mapper'
-import { Quiz } from 'src/@types/types'
 import { QuizValidation } from 'src/utils/form-validation'
-import { updateQuiz } from 'src/features/form/quizSlice'
+import { QuizMapper } from 'src/utils/quiz-mapper'
+import * as z from 'zod'
+
+import { FormSection } from './styles'
 
 type Props = React.PropsWithChildren<{}>
 

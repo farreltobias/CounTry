@@ -1,13 +1,13 @@
+import { Question } from 'src/@types/types'
 import { Button } from 'src/components/Button'
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+import { removeQuestion, updateQuestion } from 'src/features/form/questionSlice'
 import { updateQuiz } from 'src/features/form/quizSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+import { QuestionValidation } from 'src/utils/form-validation'
+import { QuestionMapper } from 'src/utils/question-mapper'
+import * as z from 'zod'
 
 import { FormSection } from './styles'
-import { QuestionMapper } from 'src/utils/question-mapper'
-import { removeQuestion, updateQuestion } from 'src/features/form/questionSlice'
-import { Question } from 'src/@types/types'
-import * as z from 'zod'
-import { QuestionValidation } from 'src/utils/form-validation'
 
 type Props = React.PropsWithChildren<{}>
 

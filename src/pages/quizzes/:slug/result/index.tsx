@@ -1,6 +1,9 @@
+import { useEffect } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
-import { Logo } from 'src/components/Logo'
 import { Button } from 'src/components/Button'
+import { Logo } from 'src/components/Logo'
+import { useAppSelector } from 'src/hooks/redux'
+import { QuizLayoutProps } from 'src/layouts/Container'
 
 import {
   Answers,
@@ -11,9 +14,6 @@ import {
   Title,
   TradeMark,
 } from './styles'
-import { useEffect } from 'react'
-import { useAppSelector } from 'src/hooks/redux'
-import { QuizLayoutProps } from 'src/layouts/Container'
 
 export function Result() {
   const navigate = useNavigate()

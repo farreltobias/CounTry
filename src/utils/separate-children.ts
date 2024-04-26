@@ -5,7 +5,7 @@ export const separateChildren = (
   childName: string,
 ) => {
   return Children.map(children, (child) => {
-    // @ts-expect-error
+    // @ts-expect-error - We know that child is a ReactElement
     if (!child || child?.type?.name !== childName) {
       return null
     }

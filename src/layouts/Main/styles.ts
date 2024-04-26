@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components'
 import img from 'src/assets/background.svg'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   html, body, div#root {

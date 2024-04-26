@@ -1,8 +1,7 @@
 import { FontQuestion } from 'iconoir-react'
-
 import { Input } from 'src/components/Input'
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 import { updateQuestion } from 'src/features/form/questionSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 
 export const QuestionTitleInput: React.FC = () => {
   const dispatch = useFormDispatch()

@@ -1,8 +1,9 @@
 import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { Button } from '.'
 import { TestTube } from 'iconoir-react'
 import { MemoryRouter } from 'react-router-dom'
+
+import { Button } from '.'
 
 const mockButtonClicked = vi.fn()
 

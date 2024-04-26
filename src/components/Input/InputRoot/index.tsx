@@ -1,8 +1,9 @@
 import { Children, forwardRef } from 'react'
-import { DefaultInput, TitleInput, LabelContainer, Error } from './styles'
-import { InputIcon } from '../InputIcon'
 import { separateChildren } from 'src/utils/separate-children'
+
+import { InputIcon } from '../InputIcon'
 import { InputLabel } from '../InputLabel'
+import { DefaultInput, Error, LabelContainer, TitleInput } from './styles'
 
 type Props = React.PropsWithChildren<{
   variant?: 'default' | 'title'

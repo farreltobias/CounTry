@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import quizzesReducer from './features/quizzes/quizzesSlice'
+
 import quizStatusReducer from './features/quiz/quizStatus'
+import quizzesReducer from './features/quizzes/quizzesSlice'
 
 export const store = configureStore({
   reducer: {

@@ -1,4 +1,5 @@
 import { ImgHTMLAttributes } from 'react'
+
 import { ImageContainer } from './styles'
 
 type Props = {} & ImgHTMLAttributes<HTMLImageElement>

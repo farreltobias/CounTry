@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { PrimaryButton, SecondaryButton, DangerButton } from './styles'
+
+import { DangerButton, PrimaryButton, SecondaryButton } from './styles'
 
 type Props = React.PropsWithChildren<{
   onClick?: () => void

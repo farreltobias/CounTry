@@ -1,5 +1,6 @@
-import { v4 as uuid } from 'uuid'
 import { EditableQuestion, Question } from 'src/@types/types'
+import { v4 as uuid } from 'uuid'
+
 import { QuestionValidation } from './form-validation'
 
 export class QuestionMapper {

@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react'
-import { QuestionForm } from '.'
-
 import { Provider } from 'react-redux'
 import { store } from 'src/layouts/Form/store'
+
+import { QuestionForm } from '.'
 
 describe('Question Form', () => {
   it('should render the component with both children', async () => {

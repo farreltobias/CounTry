@@ -1,5 +1,6 @@
 import { Button } from 'src/components/Button'
-import { Title, ButtonContainer } from './styles'
+
+import { ButtonContainer, Title } from './styles'
 
 export function NotFound() {
   return (

@@ -1,14 +1,12 @@
 import { useEffect } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
-
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
-import { FormLayoutContext } from 'src/layouts/Form'
 import { QuestionForm } from 'src/components/QuestionForm'
 import { QuizForm } from 'src/components/QuizForm'
-import { updateQuiz } from 'src/features/form/quizSlice'
-
-import { QuizMapper } from 'src/utils/quiz-mapper'
 import { removeQuestion } from 'src/features/form/questionSlice'
+import { updateQuiz } from 'src/features/form/quizSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+import { FormLayoutContext } from 'src/layouts/Form'
+import { QuizMapper } from 'src/utils/quiz-mapper'
 
 export function EditQuiz() {
   const navigate = useNavigate()

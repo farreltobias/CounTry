@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom'
-
 import { EditPencil, OpenInWindow, Trash } from 'iconoir-react'
+import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { setQuizzes } from 'src/api/storage'
+import { removeQuiz } from 'src/features/quizzes/quizzesSlice'
+import { useAppSelector } from 'src/hooks/redux'
+
 import {
   Footer,
   FooterButton,
@@ -10,10 +14,6 @@ import {
   Separator,
   Text,
 } from './styles'
-import { useDispatch } from 'react-redux'
-import { removeQuiz } from 'src/features/quizzes/quizzesSlice'
-import { useAppSelector } from 'src/hooks/redux'
-import { setQuizzes } from 'src/api/storage'
 
 type Props = {
   title: string

@@ -1,8 +1,8 @@
 import { Reorder } from 'framer-motion'
-
 import { Question } from 'src/@types/types'
-import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
 import { updateQuiz } from 'src/features/form/quizSlice'
+import { useFormDispatch, useFormSelector } from 'src/hooks/redux'
+
 import { QuestionsList } from './styles'
 
 type Props = React.PropsWithChildren<{}>

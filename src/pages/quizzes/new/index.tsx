@@ -1,10 +1,8 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-
 import { QuestionForm } from 'src/components/QuestionForm'
 import { QuizForm } from 'src/components/QuizForm'
 import { removeQuestion } from 'src/features/form/questionSlice'
-
 import { removeQuiz } from 'src/features/form/quizSlice'
 import { useFormSelector } from 'src/hooks/redux'
 
