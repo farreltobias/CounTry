@@ -95,7 +95,7 @@ export function Question() {
 
         <Score>
           <Check />
-          <span>{quizStatus.correctAnswers}</span> {/* {correctAnswers} */}
+          <span>{quizStatus.correctAnswers}</span>
         </Score>
       </Header>
 

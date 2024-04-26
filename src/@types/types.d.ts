@@ -31,7 +31,6 @@ export type EditableQuestion = {
 
 export type Quiz = {
   slug: string
-  // emoji: string
   title: string
   questions: Question[]
 }

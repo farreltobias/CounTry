@@ -14,8 +14,6 @@ export const QuestionFormHeader: React.FC = () => {
         {!isEditing
           ? 'Fill in the fields below to create a new question'
           : 'Edit the fields below to update the question'}
-        {/* Write the question, select the theme, the answers, and the correct
-        answer */}
       </HeaderSubtitle>
     </FormHeader>
   )

@@ -51,9 +51,6 @@ export const CardLabel = styled.label`
   align-items: center;
   justify-content: center;
 
-  /* width: 15.625rem;
-  height: 8rem; */
-
   width: 100%;
   height: 100%;
   padding: 1.5rem 2rem;

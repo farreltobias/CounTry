@@ -1,5 +1,3 @@
-// get quizzes from local storage
-
 import { Quiz } from 'src/@types/types'
 
 export const getQuizzes = async (): Promise<Quiz[]> => {

@@ -16,10 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  /* ::-webkit-scrollbar-thumb {
-    background: #888; 
-  } */
-
   label {
     cursor: inherit;
   }
