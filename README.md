@@ -16,7 +16,7 @@ Link do design no Figma: [CounTry](https://www.figma.com/file/PpeCN8pn1ZyohXqY6u
 
 ```bash
 # Clone o repositório
-$ git clone 
+$ git clone https://github.com/farreltobias/CounTry country
 
 # Entre na pasta do projeto
 $ cd country
