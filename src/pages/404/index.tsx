@@ -1,0 +1,15 @@
+import { Button } from 'src/components/Button'
+import { Title, ButtonContainer } from './styles'
+
+export function NotFound() {
+  return (
+    <>
+      <Title>Page not found...</Title>
+      <ButtonContainer>
+        <Button.Root size="lg" variant="secondary" to="/">
+          Back Home
+        </Button.Root>
+      </ButtonContainer>
+    </>
+  )
+}
