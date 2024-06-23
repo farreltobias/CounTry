@@ -6,6 +6,7 @@ import { StyledSelect } from './styles'
 type Props = {
   options: Option[]
   value: Option | Option[] | null
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setValue: React.Dispatch<React.SetStateAction<any>>
   label: string
   icon: React.ReactNode

@@ -1,9 +1,9 @@
 import { components, OptionProps } from 'react-select'
 
-import { Option } from '../SelectRoot'
+import { Option as OptionType } from '..'
 
-export const buildOption = () => (props: OptionProps) => {
-  const { image, label } = props.data as Option
+const Option = (props: OptionProps) => {
+  const { image, label } = props.data as OptionType
 
   return (
     <components.Option {...props}>
@@ -12,3 +12,5 @@ export const buildOption = () => (props: OptionProps) => {
     </components.Option>
   )
 }
+
+export const buildOption = () => Option

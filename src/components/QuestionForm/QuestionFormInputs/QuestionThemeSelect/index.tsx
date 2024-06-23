@@ -18,6 +18,7 @@ export const QuestionThemeSelect: React.FC = () => {
     if (theme === questionInForm.theme) return
 
     if (theme && questionInForm.errors.theme) {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { theme: _, ...errors } = questionInForm.errors
 
       return dispatch(
